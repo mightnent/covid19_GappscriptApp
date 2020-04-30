@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <base target="_self">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <?!= include("page-css"); ?>
+  </head>
+  <body>
+    <h1 style="font-size:4em;text-align:center;color:#FAB71C;margin-top:70px;">Covid Infosite</h1>
+    <h3 style="text-align:center;color:#707070;margin-bottom:20px;">Your Ultimate Compilation</h3>
+    
+    <div style="text-align:center">
+    <a href="<?= ScriptApp.getService().getUrl()?>?v=consumer" type="button" class="btn btn-outline-warning">Consumer</a>
+    <button class="btn btn-warning">Businesses</button>    
+    </div>
+    
+    <!-- 2_1 -->
+    <section>
+        <div class = "container">
+            <h6 style="color:#707070;">Operational support (delivery/pickup)</h6>
+            <div class = "row">
+                <? for(var i = 0; i < title2_1.length; i++){ ?>
+                <div class = "col-md-4 col-12">
+                    <div class="card-profile">
+                        <div class="card_horizontal">
+                            <img class="id_img" src="<?= image2_1[i] ?>" height="63" width="63">
+                            <div class="card-body" style="padding-bottom:0;">
+                                
+                                <p id="expand" class="card-text wordlimit" style="color:#707070;"><?= desc2_1[i] ?></p>
+                                <div class="card-footer bg-transparent">
+                                    <a href="<?= links2_1[i] ?>">
+                                        <h5 style="font-size:1em;" class="card-title"><?= title2_1[i] ?></h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <? } ?>
+            </div>
+        </div>
+    </section>
+    <!-- 2_2 -->
+    <section>
+        <div class = "container">
+            <h6 style="color:#707070;">Funding Support</h6>
+            <div class = "row">
+                <? for(var i = 0; i < title2_2.length; i++){ ?>
+                <div class = "col-md-4 col-12">
+                    <div class="card-profile">
+                        <div class="card_horizontal">
+                            <img class="id_img" src="<?= image2_2[i] ?>" height="63" width="63">
+                            <div class="card-body" style="padding-bottom:0;">
+                                
+                                <p id="expand" class="card-text wordlimit" style="color:#707070;"><?= desc2_2[i] ?></p>
+                                <div class="card-footer bg-transparent">
+                                    <a href="<?= links2_2[i] ?>">
+                                        <h5 style="font-size:1em;" class="card-title"><?= title2_2[i] ?></h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <? } ?>
+            </div>
+        </div>
+    </section>
+    <!-- 2_3 -->
+    <section>
+        <div class = "container">
+            <h6 style="color:#707070;">Marketing Support</h6>
+            <div class = "row">
+                <? for(var i = 0; i < title2_3.length; i++){ ?>
+                <div class = "col-md-4 col-12">
+                    <div class="card-profile">
+                        <div class="card_horizontal">
+                            <img class="id_img" src="<?= image2_3[i] ?>" height="63" width="63">
+                            <div class="card-body" style="padding-bottom:0;">
+                                
+                                <p id="expand" class="card-text wordlimit" style="color:#707070;"><?= desc2_3[i] ?></p>
+                                <div class="card-footer bg-transparent">
+                                    <a href="<?= links2_3[i] ?>">
+                                        <h5 style="font-size:1em;" class="card-title"><?= title2_3[i] ?></h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <? } ?>
+            </div>
+        </div>
+    </section>
+    <!-- 2_4 -->
+    <section>
+        <div class = "container">
+            <h6 style="color:#707070;">Sponsor free meals to the needy</h6>
+            <div class = "row">
+                <? for(var i = 0; i < title2_4.length; i++){ ?>
+                <div class = "col-md-4 col-12">
+                    <div class="card-profile">
+                        <div class="card_horizontal">
+                            <img class="id_img" src="<?= image2_4[i] ?>" height="63" width="63">
+                            <div class="card-body" style="padding-bottom:0;">
+                                
+                                <p id="expand" class="card-text wordlimit" style="color:#707070;"><?= desc2_4[i] ?></p>
+                                <div class="card-footer bg-transparent">
+                                    <a href="<?= links2_4[i] ?>">
+                                        <h5 style="font-size:1em;" class="card-title"><?= title2_4[i] ?></h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <? } ?>
+            </div>
+        </div>
+    </section>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <?!= include("page-js"); ?>
+  </body>
+
+</html>
+
+
+

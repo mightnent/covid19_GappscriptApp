@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <base target="_self">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <?!= include("page-css"); ?>
+  </head>
+  <body>
+    <h1 style="font-size:4em;text-align:center;color:#FAB71C;margin-top:70px;">Covid Infosite</h1>
+    <h3 style="text-align:center;color:#707070;margin-bottom:20px;">Your Ultimate Compilation</h3>
+    
+    <div style="text-align:center">
+    <button class="btn btn-warning">Consumer</button>
+    <a href="<?= ScriptApp.getService().getUrl()?>?v=business" type="button" class="btn btn-outline-warning">Businesses</a>
+    </div>
+    
+    <!-- 1_1 -->
+    <section>
+        <div class = "container">
+            <h6 style="color:#707070;">Alternative platfroms to get groceries or meals from</h6>
+            <div class = "row">
+                <? for(var i = 0; i < title1_1.length; i++){ ?>
+                <div class = "col-md-4 col-12">
+                    <div class="card-profile">
+                        <div class="card_horizontal">
+                            <img class="id_img" src="<?= image1_1[i] ?>" height="63" width="63">
+                            <div class="card-body" style="padding-bottom:0;">
+                                
+                                <p class="card-text wordlimit" style="color:#707070;font-size:small;"><?= desc1_1[i] ?></p>
+                                <div class="card-footer bg-transparent">
+                                    <a href="<?= links1_1[i] ?>">
+                                        <h5 style="font-size:1em;" class="card-title"><?= title1_1[i] ?></h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <? } ?>
+            </div>
+        </div>
+    </section>
+    <!-- 1_2 -->
+    <section>
+        <div class = "container">
+            <h6 style="color:#707070;">One-stop resources to support local F&B businesses</h6>
+            <div class = "row">
+                <? for(var i = 0; i < title1_2.length; i++){ ?>
+                <div class = "col-md-4 col-12">
+                    <div class="card-profile">
+                        <div class="card_horizontal">
+                            <img class="id_img" src="<?= image1_2[i] ?>" height="63" width="63">
+                            <div class="card-body" style="padding-bottom:0;">
+                                
+                                <p id="expand" class="card-text wordlimit" style="color:#707070;"><?= desc1_2[i] ?></p>
+                                <div class="card-footer bg-transparent">
+                                    <a href="<?= links1_2[i] ?>">
+                                        <h5 style="font-size:1em;" class="card-title"><?= title1_2[i] ?></h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <? } ?>
+            </div>
+        </div>
+    </section>
+    <!-- 1_3 -->
+    <section>
+        <div class = "container">
+            <h6 style="color:#707070;">Do good by donating your food and money to charity initiatives</h6>
+            <div class = "row">
+                <? for(var i = 0; i < title1_3.length; i++){ ?>
+                <div class = "col-md-4 col-12">
+                    <div class="card-profile">
+                        <div class="card_horizontal">
+                            <img class="id_img" src="<?= image1_3[i] ?>" height="63" width="63">
+                            <div class="card-body" style="padding-bottom:0;">
+                                
+                                <p id="expand" class="card-text wordlimit" style="color:#707070;"><?= desc1_3[i] ?></p>
+                                <div class="card-footer bg-transparent">
+                                    <a href="<?= links1_3[i] ?>">
+                                        <h5 style="font-size:1em;" class="card-title"><?= title1_3[i] ?></h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <? } ?>
+            </div>
+        </div>
+    </section>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <?!= include("page-js"); ?>
+  </body>
+
+</html>
+
+
